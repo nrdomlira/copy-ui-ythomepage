@@ -3,14 +3,14 @@ import React from 'react';
 import { Grid } from './styles';
 import Header from '../Header';
 import SideMenu from '../SideMenu';
-import ContentView from '../ContentView';
+import LayoutMain from './LayoutMain';
 
 const Layout: React.FC = () => {
   return (
       <Grid>
           <Header />
           <SideMenu />
-          <ContentView />
+          <LayoutMain />
       </Grid>
   );
 

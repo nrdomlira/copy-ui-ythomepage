@@ -1,29 +1,80 @@
 import React from 'react';
+import { BrowserRouter as Router, /* Switch, */ Link, /* Route */ } from 'react-router-dom';
 
-import { Container, Index, IndexIcon, OnFireIcon, OnFire, SubscriptionIcon, Subscription, Separator,  NavLibrary, NavLibraryIcon, NavHistory, NavHistoryIcon, NavYourVideos, NavYourVideosIcon, NavWL, NavWLIcon, NavLiked, NavLikedIcon, NavSM, NavSMIcon } from './styles';
+import SideMenuButton from '../SideMenuButton';
+
+import { Container, IndexIcon, OnFireIcon, SubscriptionIcon, Separator, NavLibraryIcon, NavHistoryIcon, NavYourVideosIcon, NavWLIcon, NavLikedIcon, NavSMIcon } from './styles';
 
 const SideMenu: React.FC = () => {
   return (
     <Container>
+      <Router>
+        <div>
 
-      <div>
-        <Index>
+          <Link to='/'>
+            <IndexIcon />
+            <SideMenuButton title={'Início'} />
+          </Link>
+
+          <Link to='/feed/trending'>
+            <OnFireIcon />
+            <SideMenuButton title={'Em Alta'} />
+          </Link>
+
+          <Link to='/feed/subscriptions'>
+            <SubscriptionIcon />
+            <SideMenuButton title={'Inscrições'} />
+          </Link>
+
+          <Separator />
+
+          <Link to='#'>
+            <NavLibraryIcon />
+            <SideMenuButton title={'Biblioteca'} />
+          </Link>
+
+          <Link to='#'>
+            <NavHistoryIcon />
+            <SideMenuButton title={'Histórico'} />
+          </Link>
+
+          <Link to='#'>
+            <NavYourVideosIcon />
+            <SideMenuButton title={'Seus Videos'} />
+          </Link>
+
+          <Link to='#'>
+            <NavWLIcon />
+            <SideMenuButton title={'Assistir mais tarde'} />
+          </Link>
+
+          <Link to='#'>
+            <NavLikedIcon />
+            <SideMenuButton title={'Vídeos marcados co...'} />
+          </Link>
+
+          <Link to='#'>
+            <NavSMIcon />
+            <SideMenuButton title={'Mostrar mais'} />
+          </Link>
+
+          {/* <Index href={'/'}>
           <IndexIcon />
-          <span>Início</span>
+          <SideMenuButton title={'Início'}/>
         </Index>
-        <OnFire>
+
+        <OnFire href={'/feed/trending'}>
           <OnFireIcon />
-          <span>Em Alta</span>
+          <SideMenuButton  title={'Em Alta'}/>
         </OnFire>
-        <Subscription>
+
+        <Subscription href={'/feed/subscriptions'}>
           <SubscriptionIcon />
-          <span>Inscrições</span>
-        </Subscription>
-      </div>
+          <SideMenuButton  title={'Inscrições'}/> 
+        </Subscription>      
 
       <Separator />
-
-      <div>
+     
         <NavLibrary>
           <NavLibraryIcon />
           <span>Biblioteca</span>
@@ -52,9 +103,9 @@ const SideMenu: React.FC = () => {
         <NavSM>
           <NavSMIcon />
           <span>Mostrar mais</span>
-        </NavSM>
+        </NavSM> */}
         </div>
-        
+      </Router>
 
       <Separator />
     </Container>

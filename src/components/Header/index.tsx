@@ -32,7 +32,7 @@ const Hearder: React.FC<Props> = ({
           <ExtraApplications />
           <Notification /* hasNotification={hasNotification} *//>
           <UserProfile>
-            <img src={'https://lh5.googleusercontent.com/-wLDNng7B4EY/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuclMz4ujScnJEG7MkE6iNVY__qt-yQ/s88-c-k-c0x00ffffff-no-rj-mo/photo.jpg'} />
+            <img src={'https://lh5.googleusercontent.com/-wLDNng7B4EY/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuclMz4ujScnJEG7MkE6iNVY__qt-yQ/s88-c-k-c0x00ffffff-no-rj-mo/photo.jpg'} alt='Imagem do Perfil' />
           </UserProfile>
         </AccountTools>
     </Container>

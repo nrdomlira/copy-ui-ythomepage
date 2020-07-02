@@ -22,25 +22,23 @@ export const Container = styled.div`
     
         transition: .2s;
 
-        > div:hover{
+        > a:hover{
             cursor: pointer;
             background-color: #383838;
         }
 
-        > div {
+        > a {
             height: 38px;
             padding: 0 24px;
+            margin: 4px 0 0 0;
 
             display: flex;
             align-items: center;
+
+            text-decoration: none;
         }
 
-        > div span {
-            max-width: 20px;
-            white-space: nowrap;
-        }
-
-        > div svg {
+        >a svg {
         color: #909090;       
         
         width: 24px;
@@ -48,7 +46,13 @@ export const Container = styled.div`
         
         margin-right: 24px;
         }
+
+        &.active {
+            background-color: #383838;
+        }
+
     }
+    
 
     overflow-y: scroll;
     
@@ -65,25 +69,25 @@ export const Container = styled.div`
     
 `;
 
-export const Index = styled.div`
-    
+export const Index = styled.a`
+    color: white;
 `;
 
 export const IndexIcon = styled(Home)`
-    
+        
 `;
 
 export const OnFireIcon = styled(Fire)`
 `;
 
-export const OnFire = styled.div`
+export const OnFire = styled.a`
 `;
 
 export const SubscriptionIcon = styled(Subscriptions)`
     
 `;
 
-export const Subscription = styled.div`
+export const Subscription = styled.a`
 `;
 
 export const Separator = styled.div`
@@ -99,37 +103,37 @@ export const NavSideBar = styled.div`
 
 `;
 
-export const NavLibrary = styled.div`
+export const NavLibrary = styled.a`
 `;
 
 export const NavLibraryIcon = styled(VideoLibrary)`
 `;
 
-export const NavHistory = styled.div`
+export const NavHistory = styled.a`
 `;
 
  export const NavHistoryIcon = styled(History)`
  `;
 
- export const NavYourVideos = styled.div`
+ export const NavYourVideos = styled.a`
  `;
 
  export const NavYourVideosIcon = styled(PlayVideo)`
  `;
 
- export const NavWL = styled.div`
+ export const NavWL = styled.a`
  `;
 
  export const NavWLIcon = styled(Clock)`
  `;
 
- export const NavLiked = styled.div`
+ export const NavLiked = styled.a`
  `;
 
  export const NavLikedIcon = styled(Like)`
  `;
 
- export const NavSM = styled.div`
+ export const NavSM = styled.a`
  `;
 
  export const NavSMIcon = styled(KeyboardArrowDown)`
