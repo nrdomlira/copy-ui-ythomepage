@@ -22,8 +22,6 @@ export const Title = styled.div`
         font-size: 16px;
         font-family: 'Roboto', sans-serif;
         font-weight: bold;
-    
-    
 `;
 
 export const VideoGrid = styled.div`

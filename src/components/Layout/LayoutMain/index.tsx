@@ -65,9 +65,10 @@ const LayoutMain: React.FC = () => {
           <VideoOptions />
           </UploadDetail>
         </VideoScope>
-      </VideoGrid>
 
-    </Container>
+
+      </VideoGrid>
+      </Container>
   );
 }
 

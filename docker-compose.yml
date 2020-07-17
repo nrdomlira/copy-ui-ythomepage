@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+
+  webytui:
+    container_name: webyt-ui
+    tty: true
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - '.:/app'
+      - '/app/node_modules'
+    ports:
+      - 3001:3000
+    
